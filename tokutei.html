@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>特定商取引法に基づく表記 | WHALON</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #0f1f4a;
+  --navy-light: #2a4a9e;
+  --cyan: #1d6fa8;
+  --black: #080e1f;
+  --gray-700: #2d3748;
+  --gray-600: #4a5568;
+  --gray-400: #718096;
+  --gray-200: #e2e8f0;
+  --gray-100: #f7f9fc;
+  --white: #ffffff;
+  --page-bg: #f9fafc;
+  --font-jp: 'Noto Sans JP', sans-serif;
+  --font-en: 'DM Sans', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-jp); background: var(--page-bg); color: var(--gray-700); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(10,22,40,0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(29,111,168,0.18); height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 6%; }
+.logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.nav-logo-name { font-family: var(--font-en); font-size: 1.05rem; font-weight: 500; letter-spacing: 0.16em; color: #fff; }
+.nav-logo-sub { font-family: var(--font-en); font-size: 0.6rem; font-weight: 300; letter-spacing: 0.14em; color: rgba(255,255,255,0.3); display: none; }
+@media (min-width: 640px) { .nav-logo-sub { display: inline; } }
+.nav-btn { font-family: var(--font-jp); font-size: 0.78rem; font-weight: 500; color: var(--black); background: var(--cyan); padding: 8px 22px; border-radius: 4px; text-decoration: none; letter-spacing: 0.04em; transition: opacity 0.2s; }
+.nav-btn:hover { opacity: 0.85; }
+
+/* MAIN */
+.wrap { max-width: 800px; margin: 0 auto; }
+.page-section { padding: 112px 6% 100px; }
+
+.s-label { font-family: var(--font-en); font-size: 0.62rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--cyan); margin-bottom: 12px; }
+.s-title { font-size: clamp(1.3rem, 3vw, 1.75rem); font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: var(--navy); margin-bottom: 48px; }
+
+/* TABLE */
+.tokutei-table { width: 100%; border-collapse: collapse; border-top: 1px solid var(--gray-200); margin-bottom: 40px; background: var(--white); border-radius: 8px; overflow: hidden; }
+.tokutei-table tr { border-bottom: 1px solid var(--gray-200); }
+.tokutei-table tr:last-child { border-bottom: none; }
+.tokutei-table th { width: 200px; min-width: 120px; padding: 18px 16px 18px 20px; text-align: left; vertical-align: top; font-size: 0.82rem; font-weight: 500; color: var(--navy); line-height: 1.8; background: var(--gray-100); }
+.tokutei-table td { padding: 18px 20px 18px 16px; font-size: 0.84rem; color: var(--gray-600); line-height: 2; }
+
+.page-note { font-size: 0.81rem; color: var(--gray-600); line-height: 2; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px; padding: 18px 22px; }
+
+/* FOOTER */
+footer { background: #080e1f; border-top: 1px solid rgba(255,255,255,0.08); padding: 28px 6%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.footer-logo-name { font-family: var(--font-en); font-size: 0.88rem; font-weight: 500; letter-spacing: 0.14em; color: rgba(255,255,255,0.3); }
+.footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.18); letter-spacing: 0.06em; }
+
+@media (max-width: 720px) {
+  .page-section { padding: 90px 5% 72px; }
+  nav { padding: 0 5%; }
+  .tokutei-table th { width: 100px; min-width: 90px; font-size: 0.76rem; padding: 14px 10px 14px 14px; }
+  .tokutei-table td { font-size: 0.79rem; padding: 14px 14px 14px 10px; }
+  footer { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo-link">
+    <span class="nav-logo-name">WHALON</span>
+    <span class="nav-logo-sub">AI Workflow Implementation</span>
+  </a>
+  <a href="index.html#contact" class="nav-btn">相談する</a>
+</nav>
+
+<!-- MAIN -->
+<div class="page-section">
+  <div class="wrap">
+    <p class="s-label">Legal</p>
+    <h1 class="s-title">特定商取引法に基づく表記</h1>
+
+    <table class="tokutei-table">
+      <tr>
+        <th>事業者名</th>
+        <td>WHALON</td>
+      </tr>
+      <tr>
+        <th>運営責任者</th>
+        <!-- 責任者名差し替え箇所 -->
+        <td>種田 海人</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <!-- 所在地差し替え箇所 ※公開する場合はここに実住所を記載 -->
+        <td>ご請求があった場合、遅滞なく開示いたします。</td>
+      </tr>
+      <tr>
+        <th>メールアドレス</th>
+        <!-- メールアドレス差し替え箇所 -->
+        <td>whalonzhushihuishe@gmail.com</td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <!-- 電話番号差し替え箇所 -->
+        <td>（準備中）※ご請求があった場合、遅滞なく開示いたします。</td>
+      </tr>
+      <tr>
+        <th>販売価格 / 料金</th>
+        <td>サービス内容に応じて個別にお見積もりいたします。ご契約前に金額を明示します。</td>
+      </tr>
+      <tr>
+        <th>商品代金以外の料金</th>
+        <td>必要に応じて事前にご案内いたします。</td>
+      </tr>
+      <tr>
+        <th>支払い方法</th>
+        <td>銀行振込 / その他、ご相談に応じます。</td>
+      </tr>
+      <tr>
+        <th>支払い時期</th>
+        <td>契約内容に応じて個別にご案内いたします。</td>
+      </tr>
+      <tr>
+        <th>サービス提供時期</th>
+        <td>契約内容に応じて個別にご案内いたします。</td>
+      </tr>
+      <tr>
+        <th>キャンセル・返金</th>
+        <td>着手後のキャンセル・返金は原則お受けできません。ただし、個別の契約内容に準じます。</td>
+      </tr>
+      <tr>
+        <th>動作環境</th>
+        <td>利用するツール・サービスにより異なります。ご契約前に事前確認いたします。</td>
+      </tr>
+    </table>
+
+    <p class="page-note">
+      ※ 記載内容は予告なく変更する場合があります。最新情報はこのページをご確認ください。<br>
+      ※ ご不明な点は <a href="index.html#contact" style="color:var(--navy-light);">お問い合わせ</a> よりご連絡ください。
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo-name">WHALON</span>
+  <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:flex-end;">
+    <!-- メールアドレス差し替え箇所 -->
+    <a href="mailto:whalonzhushihuishe@gmail.com" style="font-size:0.7rem;color:rgba(255,255,255,0.25);letter-spacing:0.06em;text-decoration:none;">whalonzhushihuishe@gmail.com</a>
+    <!-- 責任者名差し替え箇所 -->
+    <span style="font-size:0.7rem;color:rgba(255,255,255,0.2);letter-spacing:0.06em;">代表：種田 海人</span>
+    <a href="tokutei.html" style="font-size:0.7rem;color:rgba(255,255,255,0.25);letter-spacing:0.06em;text-decoration:none;">特定商取引法に基づく表記</a>
+    <span class="footer-copy">© 2026 WHALON. All rights reserved.</span>
+  </div>
+</footer>
+
+</body>
+</html>
