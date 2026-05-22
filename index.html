@@ -688,7 +688,23 @@ section { padding: 100px 6%; }
   font-size: 0.8rem;
   color: rgba(255,255,255,0.3);
 }
-
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.contact-list li {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 5px 16px;
+  line-height: 1.6;
+}
 /* FOOTER */
 footer {
   background: #080e1f;
@@ -711,9 +727,9 @@ footer {
   font-size: 0.88rem;
   font-weight: 500;
   letter-spacing: 0.12em;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.55)
 }
-.footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.75); letter-spacing: 0.06em; }
+.footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.45); letter-spacing: 0.06em; }
 
 /* RESPONSIVE */
 @media (max-width: 720px) {
@@ -978,8 +994,7 @@ footer {
         <span class="demo-tag">自動整形</span>
       </div>
       <div class="demo-btn-row">
-        <a href="https://files-one-virid.vercel.app" target="_blank" rel="noopener" class="demo-btn demo-btn-try">無料で試す（3回）</a>
-        <a href="gijiroku.html" class="demo-btn demo-btn-watch">詳しく見る →</a>
+        <a href="https://files-one-virid.vercel.app" target="_blank" rel="noopener" class="demo-btn demo-btn-try">無料デモを試す</a>
       </div>
       <p class="demo-note">※ 機密情報の入力はお控えください。体験後に軽相談も受け付けます。</p>
     </div>
@@ -1173,15 +1188,15 @@ footer {
 
 <!-- SNS / 実験ログ -->
 <section id="sns" style="background:#0a1628;padding:48px 6%;text-align:center;border-top:1px solid rgba(255,255,255,0.08);">
-  <p style="font-family:var(--font-en);font-size:0.62rem;letter-spacing:0.22em;color:rgba(255,255,255,0.25);margin-bottom:16px;">LOG / SNS</p>
-  <p style="font-size:0.82rem;color:rgba(255,255,255,0.3);line-height:2;margin-bottom:24px;">
+  <p style="font-family:var(--font-en);font-size:0.62rem;letter-spacing:0.22em;color:rgba(255,255,255,0.45);margin-bottom:16px;">LOG / SNS</p>
+  <p style="font-size:0.82rem;color:rgba(255,255,255,0.65);line-height:2;margin-bottom:24px;">
     実装の記録や、業務改善の観察を発信しています。
   </p>
   <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
     <!-- X(Twitter)URL差し替え箇所 -->
-    <a href="#" style="font-size:0.78rem;color:rgba(255,255,255,0.35);letter-spacing:0.08em;text-decoration:none;border:1px solid rgba(255,255,255,0.12);padding:8px 20px;border-radius:4px;">X（Twitter）</a>
+    <a href="#" style="font-size:0.78rem;color:rgba(255,255,255,0.65);letter-spacing:0.08em;text-decoration:none;border:1px solid rgba(255,255,255,0.25);padding:8px 20px;border-radius:4px;">X（Twitter）</a>
     <!-- NoteURL差し替え箇所 -->
-    <a href="#" style="font-size:0.78rem;color:rgba(255,255,255,0.35);letter-spacing:0.08em;text-decoration:none;border:1px solid rgba(255,255,255,0.12);padding:8px 20px;border-radius:4px;">note</a>
+    <a href="#" style="font-size:0.78rem;color:rgba(255,255,255,0.65);letter-spacing:0.08em;text-decoration:none;border:1px solid rgba(255,255,255,0.25);padding:8px 20px;border-radius:4px;">note</a>
   </div>
 </section>
 
