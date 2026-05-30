@@ -218,6 +218,41 @@ section { padding: 100px 6%; }
 }
 .btn-ghost:hover { border-color: rgba(255,255,255,0.5); opacity: 0.75; }
 
+/* JUMP NAV */
+.jump-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  position: sticky;
+  top: 80px;
+  z-index: 90;
+  padding: 0 6%;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.jump-nav::-webkit-scrollbar { display: none; }
+.jump-nav-inner {
+  display: inline-flex;
+  min-width: 100%;
+}
+.jump-nav a {
+  display: inline-block;
+  padding: 14px 18px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+.jump-nav a:hover {
+  color: var(--navy);
+  border-bottom-color: var(--cyan);
+}
+
 /* OVERVIEW */
 #overview { background: var(--white); border-bottom: 1px solid var(--gray-200); }
 #overview .s-title { color: var(--navy); }
@@ -865,6 +900,19 @@ footer {
   </a>
   <a href="https://soudan-form.vercel.app/" target="_blank" rel="noopener" class="nav-btn">相談する</a>
 </nav>
+
+<!-- JUMP NAV -->
+<div class="jump-nav">
+  <div class="jump-nav-inner">
+    <a href="#overview">WHALONとは</a>
+    <a href="#what">できること</a>
+    <a href="#tools">改善例</a>
+    <a href="#flow">導入の流れ</a>
+    <a href="#pricing">料金</a>
+    <a href="#faq">よくある質問</a>
+    <a href="#contact">相談する</a>
+  </div>
+</div>
 
 <!-- HERO -->
 <section id="hero">
