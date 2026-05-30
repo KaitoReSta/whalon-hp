@@ -542,6 +542,47 @@ section { padding: 100px 6%; }
   line-height: 2;
 }
 
+/* FLOW VISUAL */
+.flow-visual {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 40px 0 24px;
+}
+.flow-step-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 80px;
+}
+.flow-step-circle {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+}
+.flow-step-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.flow-step-arrow {
+  font-size: 1.2rem;
+  color: var(--gray-400);
+  margin: 0 4px 20px;
+}
+@media (max-width: 600px) {
+  .flow-visual { flex-direction: column; align-items: flex-start; }
+  .flow-step-box { flex-direction: row; gap: 12px; padding: 8px 0; }
+  .flow-step-name { text-align: left; }
+  .flow-step-arrow { transform: rotate(90deg); margin: 4px 0 4px 16px; }
+}
+
 /* FLOW */
 #flow { background: var(--white); border-top: 1px solid var(--gray-200); }
 #flow .s-title { color: var(--navy); }
@@ -1092,6 +1133,33 @@ footer {
   <div class="wrap">
     <p class="s-label">Process</p>
     <h2 class="s-title">導入の流れ</h2>
+    <!-- 図解 -->
+<div class="flow-visual">
+  <div class="flow-step-box">
+    <div class="flow-step-circle">🗣</div>
+    <span class="flow-step-name">聞く</span>
+  </div>
+  <span class="flow-step-arrow">→</span>
+  <div class="flow-step-box">
+    <div class="flow-step-circle">📋</div>
+    <span class="flow-step-name">整理する</span>
+  </div>
+  <span class="flow-step-arrow">→</span>
+  <div class="flow-step-box">
+    <div class="flow-step-circle">🔬</div>
+    <span class="flow-step-name">小さく試す</span>
+  </div>
+  <span class="flow-step-arrow">→</span>
+  <div class="flow-step-box">
+    <div class="flow-step-circle">🔧</div>
+    <span class="flow-step-name">直す</span>
+  </div>
+  <span class="flow-step-arrow">→</span>
+  <div class="flow-step-box">
+    <div class="flow-step-circle">🔄</div>
+    <span class="flow-step-name">続ける</span>
+  </div>
+</div>
     <div class="flow-list">
       <div class="flow-item"><span class="flow-step-num">STEP 01</span><div><h3>ヒアリング</h3><p>現在の業務内容や課題を伺います。「何を相談すればいいか分からない」段階でも問題ありません。</p></div></div>
       <div class="flow-item"><span class="flow-step-num">STEP 02</span><div><h3>対象業務の特定</h3><p>ヒアリング内容をもとに、改善する業務を1つ絞ります。</p></div></div>
