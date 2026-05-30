@@ -256,6 +256,37 @@ section { padding: 100px 6%; }
 /* OVERVIEW */
 #overview { background: var(--white); border-bottom: 1px solid var(--gray-200); }
 #overview .s-title { color: var(--navy); }
+/* REASSURE GRID */
+.reassure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 32px;
+  max-width: 600px;
+}
+.reassure-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.reassure-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.reassure-text {
+  font-size: 0.88rem;
+  color: var(--gray-700);
+  line-height: 1.7;
+  font-weight: 500;
+}
+@media (max-width: 540px) {
+  .reassure-grid { grid-template-columns: 1fr; }
+}
 .overview-body {
   font-size: 0.92rem;
   color: var(--gray-600);
@@ -987,7 +1018,7 @@ footer {
       一気に変えない。止められる。戻せる。<br>
       まず1業務だけ、小さく試すところから始めます。
     </p>
-    
+
     <div class="reassure-grid">
       <div class="reassure-item">
         <span class="reassure-icon">💻</span>
